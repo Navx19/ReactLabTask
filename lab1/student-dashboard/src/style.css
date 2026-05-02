@@ -1,0 +1,32 @@
+:root {
+  --primary: #4CAF50;
+  --secondary: #f4f4f4;
+  --text: #333;
+  --spacing: 10px;
+  --radius: 8px;
+  --font-large: 20px;
+}
+
+.header {
+  background: var(--primary);
+  color: white;
+  padding: var(--spacing);
+}
+
+.card {
+  background: var(--secondary);
+  margin: var(--spacing);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+}
+
+.tag {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: var(--radius);
+  color: white;
+}
+
+.badge {
+  margin-top: var(--spacing);
+}

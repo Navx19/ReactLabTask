@@ -1,0 +1,123 @@
+:root {
+  --primary: #4CAF50;
+  --secondary: #f4f4f4;
+  --text: #333;
+  --spacing: 10px;
+  --radius: 8px;
+  --font-large: 20px;
+}
+
+.header {
+  background: var(--primary);
+  color: white;
+  padding: var(--spacing);
+}
+
+.card {
+  background: var(--secondary);
+  margin: var(--spacing);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+}
+
+.tag {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: var(--radius);
+  color: white;
+}
+
+.badge {
+  margin-top: var(--spacing);
+}
+
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4CAF50;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.favorite-btn {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.favorite-btn:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+.favorite-btn.favorited {
+  background-color: #ffebee;
+  border-color: #e91e63;
+  color: #e91e63;
+}
+
+.favorite-btn.favorited:hover {
+  background-color: #fce4ec;
+  border-color: #c2185b;
+}
+
+.favorites-info {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e91e63;
+  margin: 15px 0;
+}
+
+.header {
+  background: rgb(146, 127, 189);
+  color: white;
+  padding: var(--spacing);
+}
+
+.header .favorites-info {
+  color: white;
+}
+.card {
+  background: var(--secondary);
+  margin: var(--spacing);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+  position: relative;
+}
+
+.favorite-btn {
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
